@@ -44,7 +44,6 @@ public class FileResourcesUtils {
                 Event event = EventFactory.getEvent(eventDetailsStr);
                 if (event != null) {
                     event = gson.fromJson(eventDetailsStr, event.getClass());
-//                    System.out.println(event);
                     eventList.add(event);
                 } else {
                     System.out.println("No valid event found in record " + eventDetailsStr);
