@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.time.Month;
 import java.util.Calendar;
 import java.util.Map;
 
@@ -24,7 +25,7 @@ public class Report {
     @Override
     public String toString() {
         return "Report {" +
-                       " month = " + month +
+                       " month = " + Month.of(month).name() +
                        ", #Contracts = " + numberOfContracts +
                        ", AGWP = " + actualGrossPremium +
                        ", EGWP = " + expectedGrossPremium + 
