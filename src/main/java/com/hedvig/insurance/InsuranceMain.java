@@ -19,7 +19,7 @@ public class InsuranceMain {
         FileResourcesUtils fileUtils = new FileResourcesUtils();
         MetricsService metricsService = new MetricsService(new ArrayList<>());
         try {
-            absolutePath = fileUtils.getFileFromResource("stest-data4.txt");
+            absolutePath = fileUtils.getFileFromResource("stest-data.txt");
             eventList = fileUtils.getRecords(absolutePath);
 
         System.out.println("Create-Delete Report");         
